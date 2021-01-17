@@ -1,4 +1,11 @@
-# THM - Learn Linux
+---
+layout: post
+title:  "THM - Learn Linux - Summary"
+author: therokdaba
+categories: [ Hacking, THM ]
+description: "My summary of all the things to remember in THM Learn Linux room"
+---
+# THM - Learn Linux - Summary
 > https://tryhackme.com/room/zthlinux
 
 ### Basic Commands
