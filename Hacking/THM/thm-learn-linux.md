@@ -1,6 +1,5 @@
 ---
-layout: post
-theme: jekyll-theme-leap-day
+layout: default
 title:  "THM - Learn Linux - Summary"
 author: therokdaba
 categories: [ Hacking, THM ]
