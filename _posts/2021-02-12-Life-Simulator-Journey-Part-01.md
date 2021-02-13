@@ -81,7 +81,7 @@ Right now, we have a *main.py* fie that is used to generate people from the *Per
 
 ### It's Time to Say Goodbye
 
-So if you read everything up till here, thanks haha! I just want to make sure that you know this was in no means a tutorial but just a post documenting my development process. My way of creating this simulator is probably not the best way and there will probably be some radical changes as to how I'm structuring this project, so stay tuned haha!
+So if you read everything until now, thanks! I just want to make sure that you know this was in no means a tutorial but just a post documenting my development process. My way of creating this simulator is probably not the best way and there will probably be some radical changes as to how I'm structuring this project, so stay tuned!
 
 If you want to take a look at the code, go over to [https://github.com/therokdaba/Simulator](https://github.com/therokdaba/Simulator)  (what is described in this post is from Commit 2) and if you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*. 
 
