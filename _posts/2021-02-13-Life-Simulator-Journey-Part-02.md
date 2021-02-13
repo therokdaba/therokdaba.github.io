@@ -1,4 +1,4 @@
-# Journey Codding a Life Simulator Part 02
+# Journey Coding a Life Simulator Part 02
 
 ### Entities Class
 
