@@ -86,3 +86,7 @@ So if you read everything until now, thanks! I just want to make sure that you k
 If you want to take a look at the code, go over to [https://github.com/therokdaba/Simulator](https://github.com/therokdaba/Simulator)  (what is described in this post is from Commit 2) and if you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*. 
 
 Goodbye and see you next time :)!
+
+Check out [Part 02](2021-02-13-Life-Simulator-Journey-Part-02.md)!
+
+Go back to the [homepage](../README.md) of this website.

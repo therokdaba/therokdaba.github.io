@@ -2,7 +2,7 @@
 
 ### Entities Class
 
-Last time I went over the *Person* object. Quick recap: Every person in a simulation has randomly generated traits and attributes that will influence their choices and the way they interact with their environment and other people around them. 
+[Last time](2021-02-12-Life-Simulator-Journey-Part-01.md) I went over the *Person* object. Quick recap: Every person in a simulation has randomly generated traits and attributes that will influence their choices and the way they interact with their environment and other people around them. 
 
 To be able to manage every person generated in this world, I created a class called *Entities* that would contain all the generated person objects. 
 
@@ -64,3 +64,7 @@ This is it for today! In the next part, I'll show the basic version of the repro
 If you want to take a look at the code, go over to [https://github.com/therokdaba/Simulator](https://github.com/therokdaba/Simulator)  (what is described in this post is from Commit 4) and if you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*. 
 
 Goodbye and see you next time :)!
+
+Check out [Part 01](2021-02-12-Life-Simulator-Journey-Part-01.md)!
+
+Go back to the [homepage](../README.md) of this website.
