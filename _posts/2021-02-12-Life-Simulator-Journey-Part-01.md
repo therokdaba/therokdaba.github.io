@@ -87,6 +87,6 @@ If you want to take a look at the code, go over to [https://github.com/therokdab
 
 Goodbye and see you next time :)!
 
-Check out [Part 02](2021-02-13-Life-Simulator-Journey-Part-02.md)!
+Check out [Part 02](https://therokdaba.github.io/2021/02/13/Life-Simulator-Journey-Part-02.html)!
 
-Go back to the [homepage](../README.md) of this website.
+Go back to the [homepage](https://therokdaba.github.io/) of this website.
