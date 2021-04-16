@@ -315,3 +315,5 @@ Store command in a file with a **.sh** extension if we want to run bash script b
 - **$PATH**
 
     Stores all the binaries you're able to run same as **$PATH** on Windows
+
+Go back to the [homepage](https://therokdaba.github.io/) of this website.

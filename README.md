@@ -8,7 +8,7 @@ Check out "My Journey Coding a Life Simulator" series below:
 
 - [Part 03](https://therokdaba.github.io/2021/02/27/Life-Simulator-Journey-Part-03.html)
 
-Check Out Cheatsheets based on Try Hack Me Rooms below:
+Check out Cheatsheets based on Try Hack Me Rooms below:
 
 - [THM - Learn Linux](https://therokdaba.github.io/2021/04/16/THM-Learn-Linux.html)
 
