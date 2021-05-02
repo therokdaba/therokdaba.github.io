@@ -15,3 +15,7 @@ Check out Cheatsheets based on Try Hack Me Rooms below:
 - [THM - Metasploit](https://therokdaba.github.io/2021/04/16/THM-Metasploit.html)
 
 - [THM - Find Command](https://therokdaba.github.io/2021/04/16/THM-Find-Command.html)
+
+- [THM - CCPentesting](https://therokdaba.github.io/2021/05/02/THM-CCPentesting.html)
+
+- [THM - RP:Nmap](https://therokdaba.github.io/2021/05/02/THM-RP-NMAP.html)
