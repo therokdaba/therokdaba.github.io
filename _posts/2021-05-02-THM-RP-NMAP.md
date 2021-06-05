@@ -71,5 +71,3 @@
 - **-sn**
 
     Ping host and disables port scanning
-
-Go back to the [homepage](https://therokdaba.github.io/) of this website.
