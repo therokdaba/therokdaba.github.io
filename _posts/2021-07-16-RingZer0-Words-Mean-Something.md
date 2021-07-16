@@ -1,4 +1,4 @@
-# Words mean something?
+# Ring Zer0 CTF - Words mean something?
 
 This challenge is part of the web section of the RingZer0 CTF and can be found [here](https://ringzer0ctf.com/challenges/42).
 
