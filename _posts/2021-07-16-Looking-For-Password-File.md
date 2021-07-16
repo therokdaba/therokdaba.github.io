@@ -1,4 +1,4 @@
-# Looking for Password file
+# Ring Zer0 CTF - Looking for Password file
 
 This challenge is part of the web section of the RingZer0 CTF and can be found [here](https://ringzer0ctf.com/challenges/75).
 
@@ -17,3 +17,5 @@ I decided to test this out and passed through `flag.php` (the url now being: `ht
 We can see that `flag.php` does not exist, however this error also helps us verify that the website is located in `/var/www/html/`. Since the name of the challenge is "Looking for password file", we can guess that the file we are looking for is `/etc/passwd`. So we are going to the following url: `http://challenges.ringzer0team.com:10075/?page=../../../etc/passwd`.
 
 And just like that we get the password file and with it the flag!
+
+Go back to the [homepage](https://therokdaba.github.io/) of this website.
