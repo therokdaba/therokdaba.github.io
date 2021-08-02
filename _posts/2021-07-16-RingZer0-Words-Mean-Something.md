@@ -10,4 +10,7 @@ First thing I did was check the site's source page but sadly it didn't give out 
 
 There I found a flag cookie with a value of `0` (*Storage->Cookies->https://ringzer0ctf.com*). I then changed its value to 1 and reloaded the page...and voilà the flag is now displayed instead of the previous text!
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

@@ -10,4 +10,7 @@ There is a reference to Google, this can make you think of Google crawlers and l
 
 In fact, if we go to [https://ringzer0ctf.com/robots.txt](https://ringzer0ctf.com/robots.txt), we find the following directory: `/16bfff59f7e8343a2643bdc2ee76b2dc/`. Now, if we follow this directory and go to [https://ringzer0ctf.com/16bfff59f7e8343a2643bdc2ee76b2dc/](https://ringzer0ctf.com/16bfff59f7e8343a2643bdc2ee76b2dc/), we get the flag!
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

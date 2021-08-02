@@ -316,4 +316,7 @@ Store command in a file with a **.sh** extension if we want to run bash script b
 
     Stores all the binaries you're able to run same as **$PATH** on Windows
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

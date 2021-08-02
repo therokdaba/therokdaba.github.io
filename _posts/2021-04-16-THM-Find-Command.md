@@ -122,4 +122,7 @@
 
     Executes a new command, useful for privilege escalation
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

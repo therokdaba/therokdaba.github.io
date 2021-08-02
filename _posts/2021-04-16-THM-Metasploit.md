@@ -228,4 +228,7 @@ More info about meterpreter: https://www.offensive-security.com/metasploit-unlea
 
     Downloads files from the machine
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

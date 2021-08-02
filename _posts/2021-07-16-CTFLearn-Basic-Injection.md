@@ -24,4 +24,7 @@ For those of you who don't really know how SQL Injections work, this exploit wor
 
 - `-- -` we use this to comment out the rest of the query, here the comments are used to make sure that the following part of the original query isn't parsed by the database and the third dash is used to make sure that the browser doesn't remove the trailing space after the first two dashes. 
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

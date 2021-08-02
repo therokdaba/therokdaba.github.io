@@ -18,4 +18,7 @@ We can see that `flag.php` does not exist, however this error also helps us veri
 
 And just like that we get the password file and with it the flag!
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.

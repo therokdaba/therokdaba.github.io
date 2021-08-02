@@ -10,4 +10,7 @@ I then decided to open Firefox's Web Developer Tools to see if there was anythin
 
 We can see that one of the response's headers of the get request made to access the challenge page is `flag` and its value contains the flag!
 
+## Contact
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
 Go back to the [homepage](https://therokdaba.github.io/) of this website.
