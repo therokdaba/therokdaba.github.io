@@ -1,6 +1,6 @@
 # Welcome to TheRokdaba
 
-## Check out "My Journey Coding a Life Simulator" series below:
+## "My Journey Coding a Life Simulator":
 
 - [Part 01](https://therokdaba.github.io/2021/02/12/Life-Simulator-Journey-Part-01.html)
 
@@ -8,7 +8,7 @@
 
 - [Part 03](https://therokdaba.github.io/2021/02/27/Life-Simulator-Journey-Part-03.html)
 
-## Check out Cheatsheets based on Try Hack Me Rooms below:
+## Cheatsheets based on Try Hack Me Rooms:
 
 - [THM - Learn Linux](https://therokdaba.github.io/2021/04/16/THM-Learn-Linux.html)
 
@@ -22,7 +22,7 @@
 
 ## HackTheBox:
 
-- [Archetype(https://therokdaba.github.io/2021/06/05/HTB-Archetype.html))
+- [Archetype](https://therokdaba.github.io/2021/06/05/HTB-Archetype.html)
 
 ## RingZer0 CTF:
 
