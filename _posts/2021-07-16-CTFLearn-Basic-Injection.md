@@ -12,7 +12,7 @@ So we already know that we need to use SQL Injection and looking at the challeng
 
 So let's go to this website:
 
-![Basic%20Injection/webpage.png](Basic%20Injection/webpage.png)
+![Basic%20Injection/webpage.png](/images/Basic%20Injection/webpage.png)
 
 If we enter `' or 1=1; -- -`, we are able to leak the whole database.
 

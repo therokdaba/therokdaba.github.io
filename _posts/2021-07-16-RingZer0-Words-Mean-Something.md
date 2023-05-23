@@ -4,7 +4,7 @@ This challenge is part of the web section of the RingZer0 CTF and can be found [
 
 This challenge's page shows the following:
 
-![Words%20Mean%20Something/chall_page.png](Words%20Mean%20Something/chall_page.png)
+![Words%20Mean%20Something/chall_page.png](/images/Words%20Mean%20Something/chall_page.png)
 
 First thing I did was check the site's source page but sadly it didn't give out any flag or any interesting information. So I then took a look at Firefox's Web Developer Tools. 
 

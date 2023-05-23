@@ -6,7 +6,7 @@ This time the challenge's info page only says the following: "Answer is closer t
 
 I then decided to open Firefox's Web Developer Tools to see if there was anything more interesting there. I decided to take a look at the requests that were made in the *Network* tab:
 
-![Headache/requests.png](Headache/requests.png)
+![Headache/requests.png](/images/Headache/requests.png)
 
 We can see that one of the response's headers of the get request made to access the challenge page is `flag` and its value contains the flag!
 

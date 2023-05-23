@@ -84,7 +84,7 @@
 
 Metasploit consists of six modules:
 
-![THM%20Metasploit/module_diagram.png](THM%20Metasploit/module_diagram.png)
+![THM%20Metasploit/module_diagram.png](/images/THM%20Metasploit/module_diagram.png)
 
 *Note, this diagram includes both the interfaces and *most* of the modules. This diagram does not include the 'Post' module.*
 

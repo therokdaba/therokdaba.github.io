@@ -64,7 +64,7 @@ free(local_28);
 
 And we can find above `appointments`, a bunch of pointers to interesting functions we can overwrite:
 
-![Possible functions we can overwrite](/_drafts/Appointment%20Book/poss_fct_overwrite.png)
+![Possible functions we can overwrite](/images/Appointment%20Book/poss_fct_overwrite.png)
 
 So what we need to do is overwrite the pointer to one of these functions so that it points to our win function, and then the next time this function is called, it will instead call our win function giving us a shell.
 
@@ -159,3 +159,9 @@ io.interactive()
 ```
 
 And the flag is: `Hero{Unch3ck3d_n3g4t1v3_1nd3x_1nt0_G0T_0v3wr1t3_g03s_brrrrrr}`
+
+## Contact
+
+If you have any questions or remarks don't hesitate to reach out on discord to *therokdaba#9872*.
+
+Go back to the [homepage](https://therokdaba.github.io/) of this website.

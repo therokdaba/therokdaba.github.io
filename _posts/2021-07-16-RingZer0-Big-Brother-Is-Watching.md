@@ -4,7 +4,7 @@ This challenge is part of the web section of the RingZer0 CTF and can be found [
 
 The challenge page shows the following:
 
-![Big%20Bro/chall_page.png](Big%20Bro/chall_page.png)
+![Big%20Bro/chall_page.png](/images/Big%20Bro/chall_page.png)
 
 There is a reference to Google, this can make you think of Google crawlers and lead you to check the site's `robots.txt` file. In fact, *a robots.txt file is used primarily to manage crawler traffic to your site, and usually to keep a file off Google* (definition found here: [https://developers.google.com/search/docs/advanced/robots/intro](https://developers.google.com/search/docs/advanced/robots/intro)). So the `robots.txt file` could make sure that Google does not find this challenge's flag.
 
