@@ -34,6 +34,8 @@
 
 ## HackTheBox Writeups:
 
+- [Lame](https://therokdaba.github.io/2023/07/26/HTB-Lame.html)
+
 - [Archetype](https://therokdaba.github.io/2021/06/05/HTB-Archetype.html)
 
 ## "My Journey Coding a Life Simulator" - Archived February 2021:
