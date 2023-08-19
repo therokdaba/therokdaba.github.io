@@ -34,6 +34,8 @@
 
 ## HackTheBox Writeups:
 
+- [Bashed](https://therokdaba.github.io/2023/08/19/HTB-Bashed.html)
+
 - [Lame](https://therokdaba.github.io/2023/07/26/HTB-Lame.html)
 
 - [Archetype](https://therokdaba.github.io/2021/06/05/HTB-Archetype.html)
