@@ -4,51 +4,51 @@ Oopsie is the second HTB machine in *Starting Point*. Like *Archetype*, it's lab
 
 Once again, we will start our attack with an Nmap scan with the following tags: `-sC` (to tell Nmap to use it's default scripts), `-sV` (to get more information about the services running on the different ports of the machine) and using `-oN` we save the scan in a file called `initial`. Our scan returns:
 
-![Oopsie/nmap_initial.png](Oopsie/nmap_initial.png)
+![Oopsie/nmap_initial.png](/images/Oopsie/nmap_initial.png)
 
 We can see ssh running on port `22` and http on `80`. We identify this box as a Linux machine.
 
 We also run an aggressive scan on all ports by adding the following tags: `-A` (tells nmap to run an aggressive scan) and `-p-` (the scan runs on all ports).
 
-![Oopsie/nmap_all_ports_aggressive.png](Oopsie/nmap_all_ports_aggressive.png)
+![Oopsie/nmap_all_ports_aggressive.png](/images/Oopsie/nmap_all_ports_aggressive.png)
 
 As you can see, we do not have anymore information.
 
 Okay so let's take a look at the website on port `80`. We do not see anything interesting on it's homepage and it doesn't look like it's linking to anywhere else. However, when we take a look at the source code, we find a subdirectory: `cdn-cgi/login` and if we go to there, we see that it is indeed a login page:
 
-![Oopsie/cdn-cgi_login.png](Oopsie/cdn-cgi_login.png)
+![Oopsie/cdn-cgi_login.png](/images/Oopsie/cdn-cgi_login.png)
 
 Before trying to enter credentials, let's run gobuster on the website to see if there is anything else besides `cdn-cgi/login`. We run gobuster with `-u` to specify the url and `-w` to specify the wordlist, we are going to use the `directory-list-2.3-medium.txt` from `dirbuster`. We get the following output after some time:
 
-![Oopsie/gobuster.png](Oopsie/gobuster.png)
+![Oopsie/gobuster.png](/images/Oopsie/gobuster.png)
 
 While gobuster was running, I tried to look for interesting information `cdn-cgi/login`'s sourcepage but nothing jumped out so I went back to the homepage and saw that it mentionned MegaCorp which is the same company present in `Archetype` so I decided to try using some of the credentials that we found on that box. `admin:MEGACORP_4dm1n!!` worked and I was able to login. I got redirected to `cdn-cgi/login/admin.php`:
 
-![Oopsie/cdn-cgi_admin.png](Oopsie/cdn-cgi_admin.png)
+![Oopsie/cdn-cgi_admin.png](/images/Oopsie/cdn-cgi_admin.png)
 
     - `cdn-cgi/login/admin.php?content=accounts&id=1`:
 
         Account subpage:
 
-        ![Oopsie/cdn-cgi_admin_account.png](Oopsie/cdn-cgi_admin_account.png)
+        ![Oopsie/cdn-cgi_admin_account.png](/images/Oopsie/cdn-cgi_admin_account.png)
 
     - `cdn-cgi/login/admin.php?content=branding&brandId=10`:
 
         Branding subpage:
 
-        ![Oopsie/cdn-cgi_admin_branding.png](Oopsie/cdn-cgi_admin_branding.png)
+        ![Oopsie/cdn-cgi_admin_branding.png](/images/Oopsie/cdn-cgi_admin_branding.png)
 
     - `cdn-cgi/login/admin.php?content=clients&orgId=1`:
 
         Client subpage:
 
-        ![Oopsie/cdn-cgi_admin_client.png](Oopsie/cdn-cgi_admin_client.png)
+        ![Oopsie/cdn-cgi_admin_client.png](/images/Oopsie/cdn-cgi_admin_client.png)
 
     - `cdn-cgi/login/admin.php?content=uploads`:
 
         Upload subpage:
 
-        ![Oopsie/cdn-cgi_admin_upload.png](Oopsie/cdn-cgi_admin_upload.png)
+        ![Oopsie/cdn-cgi_admin_upload.png](/images/Oopsie/cdn-cgi_admin_upload.png)
 
     -> review: it seems to be a database form where we can pick and choose information to get, it seems that we need to find a way to access upload so we can upload a reverse shell
 
@@ -56,7 +56,7 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
     - Requests in the Upload Page:
 
-        ![Oopsie/cdn-cgi_admin_upload_request.png](Oopsie/cdn-cgi_admin_upload_request.png)
+        ![Oopsie/cdn-cgi_admin_upload_request.png](/images/Oopsie/cdn-cgi_admin_upload_request.png)
 
         Cookie info: `role:"admin";user:"34322"` 
 
@@ -70,11 +70,11 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
         - Intruder (`Sniper`) on `id` using payload number `1-63`:
 
-            ![Oopsie/burp_top63.png](Oopsie/burp_top63.png)
+            ![Oopsie/burp_top63.png](/images/Oopsie/burp_top63.png)
 
             -> using ID `30`:
 
-            ![Oopsie/accounts_superadmin.png](Oopsie/accounts_super_admin.png)
+            ![Oopsie/accounts_superadmin.png](/images/Oopsie/accounts_super_admin.png)
 
             Found userID `86575`
 
@@ -82,7 +82,7 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
     - Using `user:86575`:
 
-        ![Oopsie/uploads.png](Oopsie/upload.png)
+        ![Oopsie/uploads.png](/images/Oopsie/upload.png)
 
     - On our attack machine:
 
@@ -98,7 +98,7 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
         If we look at the gobuster output from before we see the `uploads` directory. Run `uploads/php.php` and get a revshell 
 
-        ![Oopsie/revshell.png](Oopsie/revshell.png)
+        ![Oopsie/revshell.png](/images/Oopsie/revshell.png)
 
 - Privesc:
 
@@ -122,7 +122,7 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
     - We take a look at `var/www/html/cdn-cgi/login/db.php`:
 
-        ![Oopsie/db_php.png](Oopsie/db_php.png)
+        ![Oopsie/db_php.png](/images/Oopsie/db_php.png)
 
         -> `robert:M3g4C0rpUs3r!`
             
@@ -134,13 +134,13 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
     - `cat /etc/passwd`:
 
-        ![Oopsie/etc_passwd.png](Oopsie/etc_passwd.png)
+        ![Oopsie/etc_passwd.png](/images/Oopsie/etc_passwd.png)
 
         -> mysql user but has `/bin/false`: `a binary that immediately exits, returning false, when it's called, so when someone who has false as shell logs in, they're immediately logged out when false exits.` -> they do not have access to a shell tho
 
     - `find / -type f -perm /u=s 2>/dev/null`: find SUIDs
 
-        ![Oopsie/suid_find.png](Oopsie/suid_find.png)
+        ![Oopsie/suid_find.png](/images/Oopsie/suid_find.png)
 
         -> `bugtracker` looks interesting
     
@@ -148,17 +148,17 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
         - `file /usr/bin/bugtracker`:
 
-            ![Oospie/filetype_bugtracker/png](Oopsie/filetype_bugtracker.png)
+            ![Oospie/filetype_bugtracker/png](/images/Oopsie/filetype_bugtracker.png)
 
             -> we see gibberish if we cat the file
 
         - `/usr/bin/bugtracker`:
 
-            ![Oopsie/bugtracker.png](Oopsie/bugtracker.png)
+            ![Oopsie/bugtracker.png](/images/Oopsie/bugtracker.png)
 
         - `strings /usr/bin/bugtracker`:
 
-            ![Oopsie/strings_bugtracker.png](Oopsie/strings_bugtracker.png)
+            ![Oopsie/strings_bugtracker.png](/images/Oopsie/strings_bugtracker.png)
 
             -> runs a cat in it's relative path instead of its absolute so we can modify the path to point to another cat file that we created and hijacked to run `/bin/bash` 
 
@@ -178,7 +178,7 @@ While gobuster was running, I tried to look for interesting information `cdn-cgi
 
 - Filezilla:
 
-    ![Oopsie/filezilla.png](Oopsie/filezilla.png)
+    ![Oopsie/filezilla.png](/images/Oopsie/filezilla.png)
 
     -> creds: `ftpuser:mc@F1l3ZilL4`
 
